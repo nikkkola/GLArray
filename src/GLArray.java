@@ -48,12 +48,31 @@ public class GLArray {
         n = add(n, 11);
         n = add(n, 12);
         System.out.println(length(n));
+<<<<<<< HEAD
         System.out.println(n);
         System.out.println(n.next);
         try {
+=======
+        add(n, 7);
+        System.out.println(length(n));
+        try {
+            System.out.println(get(n, 0));
+        } catch (EndOfListException e) {
+            e.printStackTrace();
+        }
+        add(n, 8);
+        add(n, 9);
+        add(n, 10);
+        add(n, 11);
+        add(n, 1);
+        System.out.println(length(n));
+        try {
+            System.out.println();
+>>>>>>> origin/master
             System.out.println(get(n, 0));
             System.out.println(get(n, 3));
             System.out.println(get(n, 5));
+<<<<<<< HEAD
             System.out.println(get(n, 15));
         }
         catch (EndOfListException | IllegalArgumentException e) {
@@ -70,6 +89,10 @@ public class GLArray {
         }
         catch(EndOfListException | IllegalArgumentException e) {
             System.out.println(e.getMessage());
+=======
+        } catch (EndOfListException e) {
+            e.printStackTrace();
+>>>>>>> origin/master
         }
     }
 
